@@ -1,0 +1,81 @@
+.cat {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    .cat__head {
+        width: 100%;
+        background-color: rgba(72, 160, 72, 0.63);
+        height: 60px;
+        .cat__head__title {
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            font-weight: 500;
+            font-size: 25px;
+            user-select: none;
+            cursor: pointer;
+        }
+    }
+    .cat__body {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        .body__navigation {
+            display: flex;
+            flex-direction: column;
+            .body__navigation__title {
+                font-weight: 500;
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+            .body__navigation__block {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 120px;
+                .body__navigation__block__label {
+                    margin-right: 25px;
+                }
+            }
+        }
+        .body__main {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            .main__block {
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                .main__block__item {
+                    width: 352px;
+                    height: 330px;
+                    margin: 15px;
+                    border-radius: 15px;
+                    background-color: rgba(107, 160, 91, 0.185);
+                    border: 1px solid burlywood;
+                    .search {
+                        position: relative;
+                    }
+                    .item__img {
+                        img {
+                            border-radius: 15px 15px 0px 0px;
+                            width: 350px;
+                            height: 300px;
+                            object-fit: cover;
+                        }
+                    }
+                    .item__title {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        span {
+                            line-height: 30px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
